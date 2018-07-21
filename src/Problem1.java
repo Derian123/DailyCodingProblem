@@ -12,7 +12,7 @@ public class Problem1{
 //This code does it in one pass as it'll check the number for its compliment.
 
     public boolean arrayHasSumOf(int[] arr, int target){
-        
+
         //hashmap to store the values
         HashMap<Integer, Integer> map = new HashMap<>();
 
@@ -20,10 +20,9 @@ public class Problem1{
         for(int i = 0; i < arr.length; i++){
 
             //if map contains the compliment of the number at index i
-            if(map.containsKey(target - arr[i])) return true;
-
             //else we put the value at index i into the map
-            map.put(arr[i], i);
+            if(map.containsKey(target - arr[i])) return true ; else map.put(arr[i],i);
+            
         }
         //if the for loop has finished then there was no match and we can safely return false;
         return false;
