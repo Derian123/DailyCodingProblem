@@ -5,8 +5,6 @@
 //        Follow-up: what if you can't use division?
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Iterator;
 
 public class Problem2 {
 
@@ -16,7 +14,7 @@ public class Problem2 {
         int[] products = new int[arr.length];
 
         //We run through it the original array the first time to get the total of all elements
-        for(int i = 0; i < arr.length;i++) total *= arr[i];
+        for (int num : arr) total *= num;
 
         //We run through it a second time and divide each number by the total which will give us the number
         //as if we multiplied it by the others
@@ -55,6 +53,6 @@ public class Problem2 {
         int[] arr2 = {1,2,3};
 
         System.out.println(Arrays.toString(p2.multiplyEachArrayIndex(arr)));
-        System.out.println(Arrays.toString(p2.withoutDivisionMultiplyEachArrayIndex(arr)));
+        System.out.println(Arrays.toString(p2.withoutDivisionMultiplyEachArrayIndex(arr2)));
     }
 }
