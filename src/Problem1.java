@@ -22,27 +22,27 @@ public class Problem1{
             //if map contains the compliment of the number at index i
             //else we put the value at index i into the map
             if(map.containsKey(target - arr[i])) return true ; else map.put(arr[i],i);
-            
+
         }
         //if the for loop has finished then there was no match and we can safely return false;
         return false;
     }
 
-    //this way is very inefficient
-    //The approach here is to use a nested for loop and check every combination possible
+//    this way is very inefficient
+//    The approach here is to use a nested for loop and check every combination possible
 
-//    public boolean arrayHasSumOf(int[] arr, int target){
-//
+    public boolean otherArrayHasSumOf(int[] arr, int target){
 
-//        for(int i = 0; i < arr.length-1; i++){
-//
-//            for(int j = 1; j < arr.length; j++){
-//
-//                if (arr[i] + arr[j] == target) return true;
-//            }
-//        }
-//        return false;
-//    }
+
+        for(int i = 0; i < arr.length-1; i++){
+
+            for(int j = 1; j < arr.length; j++){
+
+                if (arr[i] + arr[j] == target) return true;
+            }
+        }
+        return false;
+    }
 
     public static void main(String[] args) {
 
