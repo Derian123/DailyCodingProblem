@@ -58,7 +58,7 @@ public class Problem3 {
         String s = sb.toString();
         return s.replaceAll("\\s+" , " ");
     }
-    //appends the data onto the stringbuilder since it's more efficient.
+    //appends the data onto the stringbuilder since it is more efficient.
     public void serialize(node root, StringBuilder sb){
 
         if(root == null) sb.append(" ");
