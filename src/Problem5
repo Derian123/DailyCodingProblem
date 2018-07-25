@@ -1,0 +1,2 @@
+Problem 5 is mainly a Python problem but it can be done in Java but I believe it would be too easy since you can make a constructor
+for to create a pair then individually call the pair values.
